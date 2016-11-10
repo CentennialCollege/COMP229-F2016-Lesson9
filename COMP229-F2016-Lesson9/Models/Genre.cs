@@ -15,6 +15,15 @@ namespace COMP229_F2016_Lesson9.Models
             Albums = new HashSet<Album>();
         }
 
+        /// <summary>
+        /// This constructor takes one argument of type string and assigns the value to the Name property
+        /// </summary>
+        /// <param name="name"></param>
+        public Genre(string name)
+        {
+            this.Name = name;
+        }
+
         public int GenreId { get; set; }
 
         [StringLength(120)]
